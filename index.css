@@ -504,7 +504,7 @@
   width: 0;
   height: 0;
   border-left: 300px solid rgba(255, 73, 23, 0.8);
-  border-right: 300px solid transparent;
+  border-right: 0px solid transparent;
   border-top: 300px solid transparent;
 }
 .features .ft-list .ft-item .triangle-2 {
@@ -515,7 +515,7 @@
   width: 0;
   height: 0;
   border-left: 367.5px solid rgba(255, 73, 23, 0.6);
-  border-right: 367.5px solid transparent;
+  border-right: 0px solid transparent;
   border-top: 367.5px solid transparent;
 }
 .features .ft-list .ft-item .content {
