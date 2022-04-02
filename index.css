@@ -558,6 +558,7 @@
   justify-content: center;
   min-width: 100%;
   min-height: 140vh;
+  position: relative;
 }
 .what-we-do .sec-1 {
   min-width: 100%;
@@ -567,6 +568,79 @@
   min-width: 100%;
   background: #F5F5F5;
   min-height: 100vh;
+}
+.what-we-do .sec-3 {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  min-width: 60%;
+  min-height: 60%;
+  background: #14212A;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.what-we-do .sec-3 .left-sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: #00ffb3;
+}
+.what-we-do .sec-3 .right-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 50%;
+  padding-left: 0px;
+}
+.what-we-do .sec-3 .right-sec .row-1 {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.what-we-do .sec-3 .right-sec .row-2 {
+  width: 70%;
+}
+.what-we-do .sec-3 .right-sec .row-2 h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 57px;
+  /* or 114% */
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+.what-we-do .sec-3 .right-sec .row-3 ul {
+  padding-left: 1rem;
+  color: white;
+}
+.what-we-do .sec-3 .right-sec .row-3 ul li::marker {
+  color: #FF4917;
+}
+.what-we-do .sec-3 .right-sec .row-4 {
+  width: 90%;
+}
+.what-we-do .sec-3 .right-sec .row-4 .btn-4 {
+  color: #FFFFFF;
+  background: #FF4917;
+  border-radius: 34px;
+}
+.what-we-do .sec-3 .right-sec p {
+  width: 90%;
+  color: white !important;
 }
 
 /*# sourceMappingURL=index.css.map */
