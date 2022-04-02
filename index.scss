@@ -599,5 +599,85 @@
         margin-top: 30px;
         width: 70%;
         gap:25px;
+        .ft-item{
+            position: relative;
+            width: 367.5px;
+            .triangle-1{
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                z-index: 11;
+                width: 0; 
+                height: 0; 
+                border-left: 300px solid rgba(255, 73, 23, 0.8);
+                border-right: 300px solid transparent;
+                border-top: 300px solid transparent;
+              }
+              
+              .triangle-2{
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                z-index: 10;
+                width: 0; 
+                height: 0; 
+                border-left: 367.5px solid rgba(255, 73, 23, 0.6);;
+                border-right: 367.5px solid transparent;
+                border-top: 367.5px solid transparent;
+              }
+              .content{
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                z-index: 12;
+                @include flex($dir:column,$ai:flex-start,$jc:flex-end);
+                padding-left: 15px;
+                padding-bottom: 15px;
+                color:#fff;
+                h6{
+                    font-family: 'Assistant';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 31px;
+                    letter-spacing: -0.02em;
+                    margin-bottom: 0px;
+                    color: #FFFFFF;
+                }
+                span{
+                    font-family: 'Assistant';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 26px;
+                    letter-spacing: -0.02em;
+
+                    color: #FFFFFF;
+                }
+              }
+           
+        }
+       
+    }
+}
+
+//Section What we do
+
+.what-we-do{
+    @include flex($dir:column);
+    min-width: 100%;
+    min-height: 140vh;
+
+    .sec-1{
+        min-width: 100%;
+        min-height: 40vh;
+    }
+    .sec-2{
+        min-width: 100%;
+        background: #F5F5F5;
+        min-height: 100vh;
+    }
+    .sec-3{
+        
     }
 }
