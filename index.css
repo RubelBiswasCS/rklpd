@@ -239,4 +239,115 @@
   border-radius: 34px;
 }
 
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #F5F5F5;
+}
+.services .ttl {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  color: #FF4917;
+  margin-bottom: 30px;
+}
+.services .hd {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+}
+.services .hd h2 {
+  text-align: center;
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 57px;
+  /* or 114% */
+  letter-spacing: -0.02em;
+  color: #14212A;
+}
+.services .cards {
+  padding: 3%;
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.services .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 321px;
+  background: #fff;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+.services .cards .card .image {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.services .cards .card h6 {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 33px;
+  /* identical to box height */
+  text-align: center;
+  margin-bottom: 0px;
+  color: #14212A;
+}
+.services .cards .card p {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  color: #616161;
+  margin: 0px;
+}
+.services .cards .card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px var(--box-shadow-color);
+}
+.services .cards .card:active {
+  transform: scale(1) translateZ(0);
+  box-shadow: 0 15px 24px rgba(0, 0, 0, 0.11), 0 15px 24px var(--box-shadow-color);
+}
+.services .bb-hover {
+  transition: all 0.25s ease-in;
+  border-bottom: 7px solid transparent;
+}
+.services .bb-hover:hover,
+.services .bb-hover:focus {
+  transform: translateY(-5px);
+  border: none;
+  border-bottom: 7px solid #FF4917;
+}
+
 /*# sourceMappingURL=index.css.map */
