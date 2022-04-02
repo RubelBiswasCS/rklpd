@@ -178,4 +178,65 @@
   text-align: center;
 }
 
+.about {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+.about .left-sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  padding-right: 10%;
+  min-height: 50vh;
+}
+.about .left-sec img.image {
+  width: 50%;
+}
+.about .right-sec {
+  width: 50%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.about .right-sec .row-1 {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  color: #FF4917;
+}
+.about .right-sec .row-2 {
+  width: 50%;
+}
+.about .right-sec .row-2 h2 {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 57px;
+  /* or 114% */
+  letter-spacing: -0.02em;
+  color: #14212A;
+}
+.about .right-sec .row-3 {
+  width: 50%;
+}
+.about .right-sec .row-4 ul {
+  padding-left: 1rem;
+}
+.about .right-sec .row-4 ul li::marker {
+  color: #FF4917;
+}
+.about .right-sec .row-5 .btn-3 {
+  color: #FFFFFF;
+  background: #FF4917;
+  border-radius: 34px;
+}
+
 /*# sourceMappingURL=index.css.map */
