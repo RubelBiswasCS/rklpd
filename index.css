@@ -350,4 +350,98 @@
   border-bottom: 7px solid #FF4917;
 }
 
+.video-sec {
+  height: 60vh;
+  position: relative;
+  /* Add some content at the bottom of the video/page */
+  /* Style the button used to pause/play the video */
+}
+.video-sec video {
+  object-fit: fill;
+}
+.video-sec #bg-video {
+  min-width: 100%;
+  max-height: 100%;
+}
+.video-sec .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.video-sec .content .left-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding-left: 20%;
+}
+.video-sec .content .left-sec .row-1 {
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.video-sec .content .left-sec .row-2 {
+  width: 100%;
+}
+.video-sec .content .left-sec .row-2 h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: "Assistant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 57px;
+  /* or 114% */
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+.video-sec .content .left-sec .row-3 .btn-4 {
+  color: #FFFFFF;
+  background: #FF4917;
+  border-radius: 34px;
+}
+.video-sec .content .right-sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.video-sec #myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.video-sec #myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.features {
+  width: 100%;
+  min-height: 140vh;
+  background-color: #FF4917;
+}
+
 /*# sourceMappingURL=index.css.map */

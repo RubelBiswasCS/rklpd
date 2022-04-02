@@ -176,7 +176,6 @@
                 text-transform: uppercase;
                 color: #FFFFFF;
 
-
             }
 
             .sec-2 {
@@ -342,7 +341,7 @@
 
         .card {
             @include flex($dir:column);
-            
+
             width: 270px;
             height: 321px;
             background: #fff;
@@ -422,4 +421,106 @@
     }
 
 
+}
+
+.video-sec{
+    height: 60vh;
+    position: relative;
+    video {
+        object-fit: fill;
+      }
+    #bg-video {
+        min-width: 100%;
+        max-height: 100%;
+      }
+
+      /* Add some content at the bottom of the video/page */
+      .content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include flex();
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        .left-sec{
+            @include flex($dir:column,$ai:flex-start);
+            width: 50%;
+            padding-left: 20%;
+            //background-color: red;
+            .row-1 {
+
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 29px;
+
+                color: #FFFFFF;
+
+
+            }
+
+            .row-2 {
+                width: 100%;
+                // background-color: blue;
+                h2 {
+                    @include flex();
+                    width: 100%;
+                    font-family: 'Assistant';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 50px;
+                    line-height: 57px;
+
+                    /* or 114% */
+                    letter-spacing: -0.02em;
+
+                    color: #FFFFFF;
+                    // background-color: #FF4917
+
+
+                }
+            }
+            .row-3{
+                .btn-4{
+                    color: #FFFFFF;
+                    background: #FF4917;
+                    border-radius: 34px;
+                }
+            }
+        }
+        .right-sec{
+            @include flex();
+            width: 50%;
+  
+            
+        }
+      }
+
+      /* Style the button used to pause/play the video */
+      #myBtn {
+
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        z-index: 100;
+      }
+
+      #myBtn:hover {
+        background: #ddd;
+        color: black;
+      }
+}
+
+.features{
+    width: 100%;
+    min-height: 140vh;
+    background-color: #FF4917;
 }
